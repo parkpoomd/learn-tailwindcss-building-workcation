@@ -205,9 +205,9 @@
           </label>
         </div>
       </fieldset>
-      <div class="bg-gray-900 px-4 py-4">
+      <div class="bg-gray-900 px-4 py-4 sm:text-right">
         <button
-          class="block w-full bg-indigo-500 hover:bg-indigo-400 font-semibold text-white px-4 py-2 rounded-lg"
+          class="block w-full sm:w-auto sm:inline-block bg-indigo-500 hover:bg-indigo-400 font-semibold text-white px-4 py-2 rounded-lg"
         >
           Update results
         </button>
