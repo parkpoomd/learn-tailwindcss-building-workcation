@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-gray-900">
+  <header class="bg-gray-900 sm:flex sm:items-center sm:justify-between">
     <div class="flex justify-between px-4 py-3">
       <div>
         <svg
@@ -14,7 +14,7 @@
           />
           <path
             d="M61.063 28h3.768l3.144-11.088L71.143 28h3.768l4.704-16.8h-3.48L72.92 23.656 69.391 11.2H66.56l-3.504 12.456L59.84 11.2h-3.48L61.063 28zM85.674 28.336c3.528 0 6.36-2.76 6.36-6.336 0-3.576-2.832-6.336-6.36-6.336-3.528 0-6.336 2.76-6.336 6.336 0 3.576 2.808 6.336 6.336 6.336zm0-3.024c-1.824 0-3.24-1.368-3.24-3.312 0-1.944 1.416-3.312 3.24-3.312 1.848 0 3.264 1.368 3.264 3.312 0 1.944-1.416 3.312-3.264 3.312zM97.308 18.064V16h-3.096v12h3.096v-5.736c0-2.52 2.04-3.24 3.648-3.048V15.76c-1.512 0-3.024.672-3.648 2.304zM113.831 28l-4.968-6.072L113.687 16h-3.696l-4.128 5.28V11.2h-3.096V28h3.096v-5.448L110.231 28h3.6z"
-            fill="#2D3748"
+            fill="#FFFFFF"
           />
           <path
             fill-rule="evenodd"
@@ -28,7 +28,7 @@
         <button
           @click="toggle"
           type="button"
-          class="px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
+          class="px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white sm:hidden"
         >
           <svg
             class="w-6 h-6"
@@ -55,34 +55,41 @@
         </button>
       </div>
     </div>
-    <nav v-show="isOpen">
-      <div class="px-2 pt-2 pb-5 border-b border-gray-800">
+    <nav
+      class="sm:flex sm:items-center sm:px-4"
+      :class="{ hidden: !isOpen, block: isOpen }"
+    >
+      <div
+        class="px-2 pt-2 pb-5 border-b border-gray-800 sm:flex sm:border-b-0 sm:py-0 sm:px-0"
+      >
         <a
           href="#"
-          class="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800"
+          class="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:px-2"
           >List your property</a
         >
         <a
           href="#"
-          class="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800"
+          class="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:mt-0 sm:text-sm sm:px-2 sm:ml-2"
           >Trips</a
         >
         <a
           href="#"
-          class="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800"
+          class="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:mt-0 sm:text-sm sm:px-2 sm:ml-2"
           >Messages</a
         >
       </div>
-      <div class="px-5 py-5">
+      <div class="px-5 py-5 sm:py-0 sm:ml-4 sm:px-0">
         <div class="flex items-center">
           <img
-            class="h-10 w-10 object-cover rounded-full border-2 border-gray-600"
+            class="h-10 w-10 object-cover rounded-full border-2 border-gray-600 sm:h-8 sm:w-8"
             src="https://images.unsplash.com/photo-1550957400-e84b24b9eaee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80"
             alt="profile"
           />
-          <span class="ml-4 font-semibold text-gray-200">Isla Schoger</span>
+          <span class="ml-4 font-semibold text-gray-200 sm:hidden"
+            >Isla Schoger</span
+          >
         </div>
-        <div class="mt-5">
+        <div class="mt-5 sm:hidden">
           <a href="#" class="block text-gray-400 hover:text-white"
             >Account setting</a
           >
