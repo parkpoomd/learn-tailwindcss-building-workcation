@@ -1,7 +1,7 @@
 <template>
   <section class="bg-gray-800">
     <div class="flex justify-between px-4 py-3">
-      <div class="relative">
+      <div class="relative max-w-xs w-full">
         <div class="absolute inset-y-0 left-0 flex items-center pl-3">
           <svg
             class="w-6 h-6 text-gray-600"
@@ -19,7 +19,7 @@
           </svg>
         </div>
         <input
-          class="bg-gray-900 focus:outline-none focus:bg-white focus:text-gray-900 text-white rounded-lg pl-10 pr-4 py-2"
+          class="block w-full bg-gray-900 focus:outline-none focus:bg-white focus:text-gray-900 text-white rounded-lg pl-10 pr-4 py-2"
           type="text"
           placeholder="Serch by keywords"
         />
@@ -27,7 +27,7 @@
       <button
         @click="toggle"
         type="button"
-        class="inline-flex items-center hover:bg-gray-600 focus:outline-none focus:shadow-outline rounded-lg shadow pl-3 pr-4"
+        class="ml-4 inline-flex items-center hover:bg-gray-600 focus:outline-none focus:shadow-outline rounded-lg shadow pl-3 pr-4"
         :class="{ 'bg-gray-600': isOpen, 'bg-gray-700': !isOpen }"
       >
         <svg
