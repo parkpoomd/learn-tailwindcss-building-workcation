@@ -5,7 +5,11 @@ module.exports = {
   },
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      padding: {
+        '5/6': '83.3333333%'
+      }
+    },
     customForms: theme => ({
       default: {
         'select, radio, checkbox': {
