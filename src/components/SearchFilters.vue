@@ -132,76 +132,78 @@
       </fieldset>
       <fieldset class="px-4 py-4 border-t border-gray-900">
         <span class="block text-sm font-semibold text-gray-500">Amenities</span>
-        <label class="mt-3 flex items-center">
-          <input
-            class="form-checkbox bg-gray-900"
-            type="checkbox"
-            name="balcony"
-          />
-          <span class="ml-2 text-white">
-            Balcony
-          </span>
-        </label>
-        <label class="mt-3 flex items-center">
-          <input
-            class="form-checkbox bg-gray-900"
-            type="checkbox"
-            name="airConditioning"
-          />
-          <span class="ml-2 text-white">
-            Air conditioning
-          </span>
-        </label>
-        <label class="mt-3 flex items-center">
-          <input
-            class="form-checkbox bg-gray-900"
-            type="checkbox"
-            name="poor"
-          />
-          <span class="ml-2 text-white">
-            Poor
-          </span>
-        </label>
-        <label class="mt-3 flex items-center">
-          <input
-            class="form-checkbox bg-gray-900"
-            type="checkbox"
-            name="bearch"
-          />
-          <span class="ml-2 text-white">
-            Bearch
-          </span>
-        </label>
-        <label class="mt-3 flex items-center">
-          <input
-            class="form-checkbox bg-gray-900"
-            type="checkbox"
-            name="petFriendly"
-          />
-          <span class="ml-2 text-white">
-            Pet friendly
-          </span>
-        </label>
-        <label class="mt-3 flex items-center">
-          <input
-            class="form-checkbox bg-gray-900"
-            type="checkbox"
-            name="kidFriendly"
-          />
-          <span class="ml-2 text-white">
-            Kid friendly
-          </span>
-        </label>
-        <label class="mt-3 flex items-center">
-          <input
-            class="form-checkbox bg-gray-900"
-            type="checkbox"
-            name="parking"
-          />
-          <span class="ml-2 text-white">
-            Parking
-          </span>
-        </label>
+        <div class="sm:flex sm:-mx-2 sm:flex-wrap">
+          <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
+            <input
+              class="form-checkbox bg-gray-900"
+              type="checkbox"
+              name="balcony"
+            />
+            <span class="ml-2 text-white">
+              Balcony
+            </span>
+          </label>
+          <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
+            <input
+              class="form-checkbox bg-gray-900"
+              type="checkbox"
+              name="poor"
+            />
+            <span class="ml-2 text-white">
+              Poor
+            </span>
+          </label>
+          <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
+            <input
+              class="form-checkbox bg-gray-900"
+              type="checkbox"
+              name="bearch"
+            />
+            <span class="ml-2 text-white">
+              Bearch
+            </span>
+          </label>
+          <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
+            <input
+              class="form-checkbox bg-gray-900"
+              type="checkbox"
+              name="petFriendly"
+            />
+            <span class="ml-2 text-white">
+              Pet friendly
+            </span>
+          </label>
+          <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
+            <input
+              class="form-checkbox bg-gray-900"
+              type="checkbox"
+              name="kidFriendly"
+            />
+            <span class="ml-2 text-white">
+              Kid friendly
+            </span>
+          </label>
+          <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
+            <input
+              class="form-checkbox bg-gray-900"
+              type="checkbox"
+              name="parking"
+            />
+            <span class="ml-2 text-white">
+              Parking
+            </span>
+          </label>
+          <label class="mt-3 flex items-center sm:w-1/2 sm:px-2">
+            <input
+              class="form-checkbox bg-gray-900"
+              type="checkbox"
+              name="airConditioning"
+            />
+            <span class="ml-2 text-white">
+              Air conditioning
+            </span>
+          </label>
+        </div>
       </fieldset>
       <div class="bg-gray-900 px-4 py-4">
         <button
