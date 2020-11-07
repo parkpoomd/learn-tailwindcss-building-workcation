@@ -10,12 +10,12 @@
         </p>
       </div>
       <div class="mt-6 sm:overflow-x-auto">
-        <div class="px-4 sm:flex sm:-mx-2 sm:pb-8">
+        <div class="px-4 sm:inline-flex sm:pb-8">
           <div
             v-for="i in 4"
             :key="i"
             :class="{ 'mt-10': i > 1 }"
-            class="sm:mt-0 sm:max-w-xs sm:w-full sm:flex-shrink-0 sm:px-2"
+            class="sm:mt-0 sm:w-80 sm:flex-shrink-0 sm:px-2"
           >
             <div class="relative pb-5/6">
               <img
